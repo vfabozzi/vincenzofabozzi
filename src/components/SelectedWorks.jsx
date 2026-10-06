@@ -3,7 +3,7 @@ import { projects } from '../assets/data/projects';
 export default function SelectedWorks() {
 
     return (
-        <div id="SelectedWorks" className="flex flex-col gap-05 px-2">
+        <div id="SelectedWorks" className="flex flex-col gap-05 px-1">
             <div id="Selector" className="flex flex-row gap-05">
                 <div className='hidden'>
                     <p className="text-base uppercase">Overview</p>

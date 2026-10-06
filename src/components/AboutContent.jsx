@@ -3,7 +3,7 @@ import { workExperience, education, workshopsLecturesExhibitions } from '../asse
 export default function AboutContent() {
 
     return (
-        <div id="About" className="flex flex-col gap-05 px-2">
+        <div id="About" className="flex flex-col gap-05 px-1">
             <div className='pb-2'>
                 <p className='text-base'>Vincenzo Fabozzi is a graphic designer based in Urbino, Italy. Trained in visual arts at the Academy of Fine Arts of Urbino, he works across editorial design, motion, visual identities and web design, developing projects for both print and digital media. He currently collaborates with Linea Libellula, a communication and visual arts studio.</p>
             </div>
