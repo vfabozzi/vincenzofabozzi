@@ -19,7 +19,11 @@ export default function SelectedWorks() {
                 {projects
                 .filter((project) => project.published)
                 .map((project) => (
-                    <div key={project.order} id='WorksItem' className="btn min-h-6 py-05 border-bottom cursor-pointer">
+                    <div
+                        key={project.order}
+                        id='WorksItem'
+                        className={`min-h-6 py-05 border-bottom ${project.externalURL ? 'btn cursor-pointer' : ''}`}
+                    >
                         <a href={project.externalURL} rel='noopener noreferrer nofollow'
                         className='grid grid-cols-2 grid-items-start justify-between'>
                             <div id='LeftCol' className="flex flex-row gap-05">
