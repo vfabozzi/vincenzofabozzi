@@ -307,6 +307,16 @@ a {
     padding-right: 1.8rem;
 }
 
+.pr-24px {
+    padding-right: 2.4rem;
+}
+.pr-30px {
+    padding-right: 3rem;
+}
+.pr-36px {
+    padding-right: 3.6rem;
+}
+
 .text-base {
     font-size: 1.2rem;
     /* 12px */
