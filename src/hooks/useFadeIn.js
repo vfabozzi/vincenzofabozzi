@@ -16,13 +16,12 @@ export function useFadeIn(dependencies = []) {
 
             const mm = gsap.matchMedia();
             mm.add('(prefers-reduced-motion: no-preference)', () => {
-                gsap.fromTo(
+                gsap.to(
                     targets,
-                    { opacity: 0},
                     {
                         opacity: 1,
                         duration: 0.6,
-                        delay: 0.2,
+                        delay: 0.3,
                         ease: 'power2.out',
                         onComplete: () =>
                             targets.forEach((el) =>
