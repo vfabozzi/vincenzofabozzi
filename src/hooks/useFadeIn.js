@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { fadeIn } from '../lib/FadeIn';
 
 gsap.registerPlugin(useGSAP);
 
@@ -10,9 +9,30 @@ export function useFadeIn(dependencies = []) {
 
     useGSAP(
         () => {
-            fadeIn('[data-fadein]');
+            const targets = scope.current.querySelectorAll(
+                '[data-fadein]:not([data-fadein-done])'
+            );
+            if (!targets.length) return;
+
+            const mm = gsap.matchMedia();
+            mm.add('(prefers-reduced-motion: no-preference)', () => {
+                gsap.fromTo(
+                    targets,
+                    { opacity: 0},
+                    {
+                        opacity: 1,
+                        duration: 0.6,
+                        delay: 0.2,
+                        ease: 'power2.out',
+                        onComplete: () =>
+                            targets.forEach((el) =>
+                                el.setAttribute('data-fadein-done', '')
+                            ),
+                    }
+                );
+            });
         },
-        { scope, dependencies, revertOnUpdate: true }
+        { scope, dependencies } // niente revertOnUpdate
     );
 
     return scope;

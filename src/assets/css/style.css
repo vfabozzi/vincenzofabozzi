@@ -284,6 +284,13 @@ a {
     /* 3px */
 }
 
+.p-05 {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+
+    /* 6px */
+}
+
 .pt-05 {
     padding-top: 0.6rem;
     /* 6px */
@@ -397,6 +404,11 @@ a {
 
 [data-fadein] {
     opacity: 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
 }
 
 @media (min-width: 768px) {

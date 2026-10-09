@@ -8,8 +8,8 @@ export default function SelectedWorks({ projects }) {
     const scope = useFadeIn([view]);
      
     return (
-        <div ref={scope} id="SelectedWorks" className="flex flex-col gap-05 px-1">
-            <div id="Selector" className="flex flex-row gap-05">
+        <div ref={scope} id="SelectedWorks" className="flex flex-col px-1">
+            <div data-fadein id="Selector" className="bg-white sticky flex flex-row gap-05 p-05 border-bottom">
                 <button className={`bg-inherit p-0 works-selector ${view === 'overview' ? 'active' : ''}`} onClick={() => setView('overview')}>
                     <span className="text-base">Overview</span>
                 </button>

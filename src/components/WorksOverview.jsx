@@ -2,7 +2,7 @@ import ProjectGallery from './ProjectGallery';
 
 export default function WorksOverview({ projects }) {
     return (
-        <div id="WorksList" className="flex flex-col gap-0 border-top" >
+        <div id="WorksList" className="flex flex-col gap-0" >
             {
                 projects
                     .map((project) => (
