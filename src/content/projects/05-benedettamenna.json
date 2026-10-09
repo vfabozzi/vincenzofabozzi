@@ -1,0 +1,31 @@
+{
+    "order": 5,
+    "published": true,
+    "title": "Benedetta Menna",
+    "year": 2026,
+    "category": "Website Design, Development",
+    "buttonIcon": "\u2197",
+    "decription": [],
+    "media": [
+        {
+            "src": "../../assets/img/benedettamenna/img01.png",
+            "alt": "Hero section, desktop"
+        },
+        {
+            "src": "../../assets/img/benedettamenna/img02.png",
+            "alt": "Statement section, desktop"
+        },
+        {
+            "src": "../../assets/img/benedettamenna/img03.png",
+            "alt": "Hero section, mobile"
+        },
+        {
+            "src": "../../assets/img/benedettamenna/img04.png",
+            "alt": "Video modal, mobile"
+        },
+        {
+            "src": "../../assets/img/benedettamenna/img05.png",
+            "alt": "Video modal, mobile"
+        }
+    ]
+}

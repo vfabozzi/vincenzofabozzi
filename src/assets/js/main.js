@@ -1,5 +1,7 @@
+import gsap from "gsap";
+
 export default function Selector() {
-    const links = document.querySelectorAll('.selector');
+    const links = document.querySelectorAll('.nav-selector');
     const currentPath = window.location.pathname.replace(/\/+$/, '') || '/';
 
     links.forEach(link => {

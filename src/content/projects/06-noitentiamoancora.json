@@ -1,0 +1,27 @@
+{
+    "order": 6,
+    "published": true,
+    "title": "Noi Tentiamo Ancora (Ufficialmente)",
+    "year": 2025,
+    "category": "Visual Identity",
+    "buttonIcon": "",
+    "decription": [],
+    "media": [
+        {
+            "src": "../../assets/img/noitentiamoancora/img01.png",
+            "alt": "Poster 50 x 70 cm"
+        },
+        {
+            "src": "../../assets/img/noitentiamoancora/img02.png",
+            "alt": "Poster 100 x 200 cm"
+        },
+        {
+            "src": "../../assets/img/noitentiamoancora/img03.png",
+            "alt": "Cards"
+        },
+        {
+            "src": "../../assets/img/noitentiamoancora/img04.png",
+            "alt": "Banner"
+        }
+    ]
+}

@@ -1,15 +1,12 @@
 ---
 import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
-import SelectedWorks from '../components/SelectedWorks.jsx';
 import Layout from '../layouts/Layout.astro';
 import AboutContent from '../components/AboutContent';
 ---
 
 <Layout>
 	<Header />
-    <AboutContent />
-	<Footer />
+    <AboutContent client:load/>
 	<Nav />
 </Layout>

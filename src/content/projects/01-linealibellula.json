@@ -1,0 +1,33 @@
+{
+    "order": 1,
+    "published": true,
+    "title": "Linea Libellula",
+    "category": "Website Design, Development",
+    "year": 2026,
+    "media": [
+        {
+            "src": "../../assets/img/linealibellula/img01.png",
+            "alt": "Homepage, desktop"
+        },
+        {
+            "src": "../../assets/img/linealibellula/img02.png",
+            "alt": "Single project, mobile"
+        },
+        {
+            "src": "../../assets/img/linealibellula/img03.png",
+            "alt": "Photo feed, mobile"
+        },
+        {
+            "src": "../../assets/img/linealibellula/img04.png",
+            "alt": "Single project on load, desktop"
+        },
+        {
+            "src": "../../assets/img/linealibellula/img05.png",
+            "alt": "Homepage, mobile"
+        },
+        {
+            "src": "../../assets/img/linealibellula/img06.png",
+            "alt": "Single project, desktop"
+        }
+    ]
+}

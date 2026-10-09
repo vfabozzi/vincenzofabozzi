@@ -1,0 +1,27 @@
+{
+    "order": 8,
+    "published": true,
+    "title": "Sono Manifesto",
+    "year": 2025,
+    "category": "Visual Identity",
+    "buttonIcon": "",
+    "decription": [],
+    "media": [
+               {
+            "src": "../../assets/img/sonomanifesto/img01.png",
+            "alt": "Poster 50 x 70 cm"
+        },
+        {
+            "src": "../../assets/img/sonomanifesto/img02.png",
+            "alt": "Worshop documentation"
+        },
+        {
+            "src": "../../assets/img/sonomanifesto/img03.png",
+            "alt": "Worshop documentation"
+        },
+        {
+            "src": "../../assets/img/sonomanifesto/img04.png",
+            "alt": "Worshop documentation"
+        }
+    ]
+}

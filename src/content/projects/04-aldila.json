@@ -1,0 +1,27 @@
+{
+    "order": 4,
+    "published": true,
+    "title": "Al di là della domanda e della risposta",
+    "year": 2026,
+    "category": "Visual Identity",
+    "buttonIcon": "",
+    "decription": [],
+    "media": [
+        {
+            "src": "../../assets/img/aldila/img01.png",
+            "alt": "Folder, opened"
+        },
+        {
+            "src": "../../assets/img/aldila/img02.png",
+            "alt": "Social media post"
+        },
+        {
+            "src": "../../assets/img/aldila/img03.png",
+            "alt": "Social media post"
+        },
+        {
+            "src": "../../assets/img/aldila/img04.png",
+            "alt": "Folder, opened"
+        }
+    ]
+}

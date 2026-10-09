@@ -1,0 +1,31 @@
+{
+    "order": 7,
+    "published": true,
+    "title": "Territori Sonori",
+    "year": 2025,
+    "category": "Poster Design, Photography",
+    "buttonIcon": "",
+    "decription": [],
+    "media": [
+        {
+            "src": "../../assets/img/territorisonori/img01.png",
+            "alt": "Poster 50 x 70 cm"
+        },
+        {
+            "src": "../../assets/img/territorisonori/img02.png",
+            "alt": "Worshop documentation"
+        },
+        {
+            "src": "../../assets/img/territorisonori/img03.png",
+            "alt": "Worshop documentation"
+        },
+        {
+            "src": "../../assets/img/territorisonori/img04.png",
+            "alt": "Worshop documentation"
+        },
+        {
+            "src": "../../assets/img/territorisonori/img05.png",
+            "alt": "Worshop documentation"
+        }
+    ]
+}

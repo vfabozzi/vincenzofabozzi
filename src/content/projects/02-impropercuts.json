@@ -1,0 +1,30 @@
+{
+    "order": 2,
+    "published": true,
+    "title": [
+        "Improper Cuts",
+        "by Marco Chiarini"
+    ],
+    "year": 2026,
+    "category": "Website Design, Development",
+    "buttonIcon": "\u2197",
+    "decription": [],
+    "media": [
+        {
+            "src": "../../assets/img/impropercuts/img01.png",
+            "alt": "Hero section, desktop"
+        },
+        {
+            "src": "../../assets/img/impropercuts/img02.png",
+            "alt": "Statement section, desktop"
+        },
+        {
+            "src": "../../assets/img/impropercuts/img03.png",
+            "alt": "Hero section, mobile"
+        },
+        {
+            "src": "../../assets/img/impropercuts/img04.png",
+            "alt": "Video modal, mobile"
+        }
+    ]
+}

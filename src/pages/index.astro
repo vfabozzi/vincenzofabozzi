@@ -1,14 +1,44 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Nav from '../components/Nav.astro';
-import SelectedWorks from '../components/SelectedWorks.jsx';
-import Layout from '../layouts/Layout.astro';
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+import SelectedWorks from "../components/SelectedWorks.jsx";
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import { getImage } from "astro:assets";
+
+const entries = await getCollection("projects", ({ data }) => data.published);
+
+const projects = await Promise.all(
+	entries
+		.sort((a, b) => a.data.order - b.data.order)
+		.map(async ({ id, data }) => ({
+			id,
+			...data,
+			media: await Promise.all(
+				data.media.map(async (m) => {
+					const img = await getImage({
+						src: m.src,
+						widths: [800, 1600],
+						sizes: "100vw",
+						format: "webp",
+					});
+					return {
+						alt: m.alt,
+						src: img.src,
+						srcSet: img.srcSet.attribute,
+						width: m.src.width,
+						height: m.src.height,
+					};
+				}),
+			),
+		})),
+);
 ---
 
 <Layout>
 	<Header />
-	<SelectedWorks />
+	<SelectedWorks client:load projects={projects} />
 	<Footer />
 	<Nav />
 </Layout>
