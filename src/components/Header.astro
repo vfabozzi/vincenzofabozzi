@@ -32,7 +32,7 @@
     const elements = [...document.querySelectorAll("[data-fadein]")].filter(
         (el) =>
             !el.closest("astro-island") ||
-            el.closest("#About, #WorksList"),
+            el.closest("#About"),
     );
 
     if (elements.length) fadeIn(elements);
