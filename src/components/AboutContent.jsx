@@ -1,10 +1,8 @@
 import { about, capabilities, workExperience, education, workshopsLecturesExhibitions } from '../assets/data/about';
-import { useFadeIn } from '../hooks/useFadeIn';
 
 export default function AboutContent() {
-    const scope = useFadeIn();
     return (
-        <div ref={scope} id="About" className="flex flex-col gap-05 px-1 pb-10">
+        <div id="About" className="flex flex-col gap-05 px-1 pb-10">
             <div data-fadein className='pb-2'>
                 {about.map((content) => (
                     <p key={content.description} className='text-base'>
