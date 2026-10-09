@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useState } from 'react';
 
 export default function ProjectGallery({ media }) {
@@ -9,6 +10,16 @@ export default function ProjectGallery({ media }) {
     const hasMany = media.length > 1;
 
     const next = () => setCurrent((i) => (i + 1) % media.length);
+
+    useEffect(() => {
+        const nextItem = media[(current + 1) % media.length];
+        if (!nextItem || nextItem.type === 'video') return;
+
+        const img = new Image();
+        img.sizes = '100vw';          // stesso valore dell'<img> reale
+        img.srcset = nextItem.srcSet;
+        img.src = nextItem.src;
+    }, [current, media]);
 
     return (
         <div className="flex flex-col gap-05 pt-05 gallery-control">
