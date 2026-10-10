@@ -3,7 +3,7 @@
     "published": true,
     "title": "Noi Tentiamo Ancora (Ufficialmente)",
     "year": 2025,
-    "category": "Visual Identity, Photography",
+    "category": "Visual Identity",
     "buttonIcon": "",
     "decription": [],
     "media": [
@@ -35,33 +35,8 @@
         },
         {
             "type": "image",
-            "src": "../../assets/img/noitentiamoancora/img05.png",
-            "alt": "Banner"
-        },
-        {
-            "type": "image",
-            "src": "../../assets/img/noitentiamoancora/img06.png",
-            "alt": "Banner"
-        },
-        {
-            "type": "image",
-            "src": "../../assets/img/noitentiamoancora/img07.png",
-            "alt": "Banner"
-        },
-        {
-            "type": "image",
-            "src": "../../assets/img/noitentiamoancora/img08.png",
-            "alt": "Banner"
-        },
-        {
-            "type": "image",
-            "src": "../../assets/img/noitentiamoancora/img09.png",
-            "alt": "Banner"
-        },
-        {
-            "type": "image",
-            "src": "../../assets/img/noitentiamoancora/img10.png",
-            "alt": "Banner"
+            "src": "../../assets/img/noitentiamoancora/img05new.png",
+            "alt": "Website Banner"
         }
     ]
 }

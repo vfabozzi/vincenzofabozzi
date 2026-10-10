@@ -34,22 +34,7 @@
         },
         {
             "type": "image",
-            "src": "../../assets/img/territorisonori/img06.png",
-            "alt": "Worshop documentation"
-        },
-        {
-            "type": "image",
-            "src": "../../assets/img/territorisonori/img07.png",
-            "alt": "Worshop documentation"
-        },
-        {
-            "type": "image",
             "src": "../../assets/img/territorisonori/img08.png",
-            "alt": "Worshop documentation"
-        },
-        {
-            "type": "image",
-            "src": "../../assets/img/territorisonori/img09.png",
             "alt": "Worshop documentation"
         }
     ]

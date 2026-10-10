@@ -109,7 +109,7 @@ export default function ProjectGallery({ media }) {
                     )}
                 </button>
             </div>
-            <div className="gallery-desktop">
+            <div className="gallery-desktop gap-05">
                 {media.map((m) => (
                     <MediaThumb key={m.src} item={m} />
                 ))}

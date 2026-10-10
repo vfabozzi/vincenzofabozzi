@@ -15,17 +15,37 @@
         {
             "type": "image",
             "src": "../../assets/img/sonomanifesto/img02.png",
-            "alt": "Worshop documentation"
+            "alt": "Poster 50 x 70 cm"
         },
         {
             "type": "image",
             "src": "../../assets/img/sonomanifesto/img03.png",
-            "alt": "Worshop documentation"
+            "alt": "Poster 50 x 70 cm"
         },
         {
             "type": "image",
             "src": "../../assets/img/sonomanifesto/img04.png",
-            "alt": "Worshop documentation"
+            "alt": "Poster 50 x 70 cm"
+        },
+        {
+            "type": "image",
+            "src": "../../assets/img/sonomanifesto/img05.png",
+            "alt": "Poster 50 x 70 cm"
+        },
+        {
+            "type": "image",
+            "src": "../../assets/img/sonomanifesto/img06.png",
+            "alt": "Poster 50 x 70 cm"
+        },
+        {
+            "type": "image",
+            "src": "../../assets/img/sonomanifesto/img07.png",
+            "alt": "Poster 50 x 70 cm"
+        },
+        {
+            "type": "image",
+            "src": "../../assets/img/sonomanifesto/img08.png",
+            "alt": "Poster 50 x 70 cm"
         }
     ]
 }
