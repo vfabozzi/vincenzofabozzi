@@ -13,7 +13,21 @@ const projects = defineCollection({
             year: z.number(),
             externalURL: z.string().url().optional(),
             media: z
-                .array(z.object({ src: image(), alt: z.string() }))
+                .array(
+                    z.discriminatedUnion('type', [
+                        z.object({
+                            type: z.literal('image'),
+                            src: image(),
+                            alt: z.string(),
+                        }),
+                        z.object({
+                            type: z.literal('video'),
+                            src: z.string(), // percorso relativo a src/assets/video/
+                            poster: image(),
+                            label: z.string(), // descrizione per screen reader
+                        }),
+                    ])
+                )
                 .default([]),
         }),
 });

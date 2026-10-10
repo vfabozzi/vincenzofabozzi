@@ -6,26 +6,38 @@
     "year": 2026,
     "media": [
         {
+            "type": "image",
             "src": "../../assets/img/linealibellula/img01.png",
             "alt": "Homepage, desktop"
         },
         {
+            "type": "video",
+            "src": "linealibellula/vid01.mp4",
+            "poster": "../../assets/img/linealibellula/vid01_poster.jpg",
+            "label": "Single page loading"
+        },
+        {
+            "type": "image",
             "src": "../../assets/img/linealibellula/img02.png",
             "alt": "Single project, mobile"
         },
         {
+            "type": "image",
             "src": "../../assets/img/linealibellula/img03.png",
             "alt": "Photo feed, mobile"
         },
         {
+            "type": "image",
             "src": "../../assets/img/linealibellula/img04.png",
             "alt": "Single project on load, desktop"
         },
         {
+            "type": "image",
             "src": "../../assets/img/linealibellula/img05.png",
             "alt": "Homepage, mobile"
         },
         {
+            "type": "image",
             "src": "../../assets/img/linealibellula/img06.png",
             "alt": "Single project, desktop"
         }

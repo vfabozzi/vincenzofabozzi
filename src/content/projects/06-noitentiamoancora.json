@@ -8,18 +8,28 @@
     "decription": [],
     "media": [
         {
+            "type": "image",
             "src": "../../assets/img/noitentiamoancora/img01.png",
             "alt": "Poster 50 x 70 cm"
         },
+          {
+            "type": "video",
+            "src": "noitentiamoancora/vid01.mp4",
+            "poster": "../../assets/img/noitentiamoancora/vid01_poster.jpg",
+            "label": "Motion reel"
+        },
         {
+            "type": "image",
             "src": "../../assets/img/noitentiamoancora/img02.png",
             "alt": "Poster 100 x 200 cm"
         },
         {
+            "type": "image",
             "src": "../../assets/img/noitentiamoancora/img03.png",
             "alt": "Cards"
         },
         {
+            "type": "image",
             "src": "../../assets/img/noitentiamoancora/img04.png",
             "alt": "Banner"
         }

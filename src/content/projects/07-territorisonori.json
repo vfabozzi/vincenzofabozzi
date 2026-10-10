@@ -8,22 +8,27 @@
     "decription": [],
     "media": [
         {
+            "type": "image",
             "src": "../../assets/img/territorisonori/img01.png",
             "alt": "Poster 50 x 70 cm"
         },
         {
+            "type": "image",
             "src": "../../assets/img/territorisonori/img02.png",
             "alt": "Worshop documentation"
         },
         {
+            "type": "image",
             "src": "../../assets/img/territorisonori/img03.png",
             "alt": "Worshop documentation"
         },
         {
+            "type": "image",
             "src": "../../assets/img/territorisonori/img04.png",
             "alt": "Worshop documentation"
         },
         {
+            "type": "image",
             "src": "../../assets/img/territorisonori/img05.png",
             "alt": "Worshop documentation"
         }

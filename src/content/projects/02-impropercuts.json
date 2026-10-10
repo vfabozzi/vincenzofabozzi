@@ -11,20 +11,30 @@
     "decription": [],
     "media": [
         {
+            "type": "image",
             "src": "../../assets/img/impropercuts/img01.png",
             "alt": "Hero section, desktop"
         },
         {
+            "type": "image",
             "src": "../../assets/img/impropercuts/img02.png",
             "alt": "Statement section, desktop"
         },
         {
+            "type": "image",
             "src": "../../assets/img/impropercuts/img03.png",
             "alt": "Hero section, mobile"
         },
         {
+            "type": "image",
             "src": "../../assets/img/impropercuts/img04.png",
             "alt": "Video modal, mobile"
+        },
+        {
+            "type": "video",
+            "src": "impropercuts/vid01.mp4",
+            "poster": "../../assets/img/impropercuts/vid01_poster.jpg",
+            "label": "Landpage loading"
         }
     ]
 }

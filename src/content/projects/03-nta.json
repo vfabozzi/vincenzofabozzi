@@ -8,26 +8,32 @@
     "decription": [],
     "media": [
       {
+        "type": "image",
         "src": "../../assets/img/ntau/img01.png",
         "alt": "Hero section, desktop"
       },
       {
+        "type": "image",
         "src": "../../assets/img/ntau/img02.png",
         "alt": "Statement section, desktop"
       },
       {
+        "type": "image",
         "src": "../../assets/img/ntau/img03.png",
         "alt": "Hero section, mobile"
       },
       {
+        "type": "image",
         "src": "../../assets/img/ntau/img04.png",
         "alt": "Video modal, mobile"
       },
       {
+        "type": "image",
         "src": "../../assets/img/ntau/img05.png",
         "alt": "Video modal, mobile"
       },
       {
+        "type": "image",
         "src": "../../assets/img/ntau/img06.png",
         "alt": "Video modal, mobile"
       }

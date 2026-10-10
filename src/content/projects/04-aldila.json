@@ -8,18 +8,22 @@
     "decription": [],
     "media": [
         {
+            "type": "image",
             "src": "../../assets/img/aldila/img01.png",
             "alt": "Folder, opened"
         },
         {
+            "type": "image",
             "src": "../../assets/img/aldila/img02.png",
             "alt": "Social media post"
         },
         {
+            "type": "image",
             "src": "../../assets/img/aldila/img03.png",
             "alt": "Social media post"
         },
         {
+            "type": "image",
             "src": "../../assets/img/aldila/img04.png",
             "alt": "Folder, opened"
         }

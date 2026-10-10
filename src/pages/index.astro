@@ -5,7 +5,7 @@ import Nav from "../components/Nav.astro";
 import SelectedWorks from "../components/SelectedWorks.jsx";
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
-import { getImage } from "astro:assets";
+import { processMedia } from "../lib/processMedia";
 
 const entries = await getCollection("projects", ({ data }) => data.published);
 
@@ -15,23 +15,7 @@ const projects = await Promise.all(
 		.map(async ({ id, data }) => ({
 			id,
 			...data,
-			media: await Promise.all(
-				data.media.map(async (m) => {
-					const img = await getImage({
-						src: m.src,
-						widths: [800, 1600],
-						sizes: "100vw",
-						format: "webp",
-					});
-					return {
-						alt: m.alt,
-						src: img.src,
-						srcSet: img.srcSet.attribute,
-						width: m.src.width,
-						height: m.src.height,
-					};
-				}),
-			),
+			media: await processMedia(data.media),
 		})),
 );
 ---
