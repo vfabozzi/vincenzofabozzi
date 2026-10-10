@@ -7,6 +7,12 @@
     "buttonIcon": "",
     "decription": [],
     "media": [
+           {
+            "type": "video",
+            "src": "aldila/vid01.mp4",
+            "poster": "../../assets/img/aldila/vid01_poster.jpg",
+            "label": "Single page loading"
+        },
         {
             "type": "image",
             "src": "../../assets/img/aldila/img01.png",

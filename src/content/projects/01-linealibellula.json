@@ -12,9 +12,9 @@
         },
         {
             "type": "video",
-            "src": "linealibellula/vid01.mp4",
-            "poster": "../../assets/img/linealibellula/vid01_poster.jpg",
-            "label": "Single page loading"
+            "src": "linealibellula/vid02.mp4",
+            "poster": "../../assets/img/linealibellula/vid02_poster.jpg",
+            "label": "Mobile loading"
         },
         {
             "type": "image",
@@ -30,6 +30,12 @@
             "type": "image",
             "src": "../../assets/img/linealibellula/img04.png",
             "alt": "Single project on load, desktop"
+        },
+        {
+            "type": "video",
+            "src": "linealibellula/vid01.mp4",
+            "poster": "../../assets/img/linealibellula/vid01_poster.jpg",
+            "label": "Single page loading"
         },
         {
             "type": "image",
