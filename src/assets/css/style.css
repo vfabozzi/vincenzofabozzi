@@ -475,6 +475,10 @@ a {
     top: 0;
 }
 
+.z-99 {
+    z-index: 99;
+}
+
 @media (min-width: 768px) {
     .gallery-mobile {
         display: none;
@@ -507,6 +511,7 @@ a {
     .md\:grid-cols-8 {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
+
     .md\:col-span-1 {
         grid-column: span 1;
     }
