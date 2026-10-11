@@ -3,7 +3,7 @@ export default function WorksIndex({ projects }) {
         <div className="flex flex-col gap-0">
             {projects.map((project) => {
                 const content = (
-                    <div className="grid grid-cols-2 grid-items-start gap-1 md:gap-4">
+                    <div className="grid grid-cols-2 grid-items-start gap-1 md:gap-0-4">
                         <div className="col-span-1 flex flex-row gap-1">
                             <div className="pr-36px">
                                 <p className="text-base">

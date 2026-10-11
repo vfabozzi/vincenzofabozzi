@@ -1,7 +1,6 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Nav from "../components/Nav.astro";
 import SelectedWorks from "../components/SelectedWorks.jsx";
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
@@ -24,5 +23,4 @@ const projects = await Promise.all(
 	<Header />
 	<SelectedWorks client:load projects={projects} />
 	<Footer />
-	<Nav />
 </Layout>

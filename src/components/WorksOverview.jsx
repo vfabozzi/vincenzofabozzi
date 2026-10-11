@@ -10,7 +10,7 @@ export default function WorksOverview({ projects }) {
                         <article data-fadein key={project.id} className='flex flex-col gap-05 pb-2 border-bottom'>
                             <ProjectGallery media={project.media} />
                             <div
-                                className='grid grid-cols-2 grid-items-start gap-1 md:gap-0'>
+                                className='grid grid-cols-2 grid-items-start gap-1 md:gap-0-4'>
                                 <div id='LeftCol' className="col-span-1 flex flex-row gap-1 md:gap-0">
                                     <div className='pr-36px'>
                                         <p className="text-base">

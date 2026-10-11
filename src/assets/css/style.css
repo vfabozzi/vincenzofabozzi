@@ -94,6 +94,15 @@ html {
     position: fixed;
 }
 
+.top-0 {
+    top: 0;
+
+}
+
+.left-0 {
+    left: 0;
+}
+
 .bottom-0 {
     bottom: 0;
 }
@@ -236,6 +245,27 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.grid-cols-8 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.col-span-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.col-span-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+
+}
+
+.col-span-4 {
+    grid-column: span 4;
+    grid-row: span 4;
+
+}
+
 a {
     text-decoration: none;
     color: #434343;
@@ -296,6 +326,11 @@ a {
     /* 6px */
 }
 
+.pt-6 {
+    padding-top: 6rem;
+    /* 60px */
+}
+
 .pb-05 {
     /* 6px */
     padding-bottom: 0.6rem;
@@ -309,6 +344,11 @@ a {
 .pb-10 {
     /* 100px */
     padding-bottom: 10rem;
+}
+
+.pb-120px {
+    /* 120px */
+    padding-bottom: 12rem;
 }
 
 .py-05 {
@@ -406,6 +446,14 @@ a {
     opacity: 0;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 .sticky {
     position: sticky;
     top: 0;
@@ -417,9 +465,9 @@ a {
     }
 
     .gallery-desktop {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 0.4rem;
     }
 
     .gallery-desktop-item {
@@ -428,13 +476,74 @@ a {
         object-fit: cover;
     }
 
+    .md\:pb-1 {
+        padding-bottom: 1.2rem;
+    }
+
+    .md\:pb-2 {
+        padding-bottom: 1.8rem;
+    }
+    .md\:pb-120px {
+        padding-bottom: 12rem;
+    }
+    .md\:col-span-1 {
+        grid-column: span 1;
+    }
+    .md\:col-span-2 {
+        grid-column: span 2;
+    }
+
     .md\:gap-2-7 {
         column-gap: 2.7rem;
         row-gap: 2.7rem;
     }
 
+    .md\:gap-0-4 {
+        column-gap: 0.4rem;
+        row-gap: 0.4rem;
+    }
+
     .md\:gap-4 {
         column-gap: 3rem;
         row-gap: 3rem;
+    }
+
+    .md\:hidden {
+        display: none;
+    }
+
+    .md\:grid {
+        display: grid;
+    }
+
+    .md\:flex {
+        display: flex;
+    }
+
+    .md\:block {
+        display: block;
+    }
+
+    .md\:fixed {
+        position: fixed;
+    }
+
+    .desktop-nav {
+        position: fixed;
+        top: 0.6rem;
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+        column-gap: 0.4rem;
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        pointer-events: none;
+        z-index: 10;
+    }
+
+    .desktop-nav>div {
+        grid-column: 5;
+        pointer-events: auto;
     }
 }

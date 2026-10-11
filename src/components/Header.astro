@@ -1,38 +1,74 @@
-<header data-fadein class="grid grid-cols-2 gap-1 md:gap-2-7 pt-1 pb-6 px-1">
-    <div class="col-span-1">
-        <a href="/" class="text-base">Vincenzo Fabozzi</a>
-    </div>
-    <div class="col-span-1 flex flex-col gap-0 items-start">
-        <div class="btn px-025 rounded">
+---
+import Nav from "./Nav.astro";
+---
+
+<header data-fadein class="pt-05 pb-2 md:pb-120px px-1">
+    <!-- Mobile -->
+    <div class="md:hidden grid grid-cols-2 gap-1 md:gap-0-4">
+        <div class="col-span-1">
+            <a href="/" class="text-base">Vincenzo Fabozzi</a>
+        </div>
+        <div class="col-span-1 flex flex-col gap-0 items-start">
+            <div class="btn px-025 rounded">
+                <p class="text-base">
+                    E. <a href="mailto:fabozzi.vin@gmail.com"
+                        >fabozzi.vin@gmail.com</a
+                    >
+                </p>
+            </div>
+            <div class="btn px-025 rounded">
+                <p class="text-base">
+                    I. <a href="https://www.instagram.com/vi.fabozzi/"
+                        >@vi.fabozzi</a
+                    >
+                </p>
+            </div>
+        </div>
+        <div id="IntroSection" class="col-span-2 pt-6">
             <p class="text-base">
-                E. <a href="mailto:fabozzi.vin@gmail.com"
-                    >fabozzi.vin@gmail.com</a
-                >
+                Graphic Designer <br />
+                Based in Urbino, IT <br />
+                Editorial · Motion · Visual Identities · Web Design
             </p>
         </div>
-        <div class="btn px-025 rounded">
+    </div>
+    <!-- Desktop -->
+    <div class="hidden md:grid grid-cols-8 gap-0-4 relative">
+        <div class="col-span-1">
+            <a href="/" class="text-base">Vincenzo Fabozzi</a>
+        </div>
+        <div class="col-span-1 flex flex-col gap-0 items-start">
+            <div class="btn px-025 rounded">
+                <p class="text-base">
+                    E. <a href="mailto:fabozzi.vin@gmail.com"
+                        >fabozzi.vin@gmail.com</a
+                    >
+                </p>
+            </div>
+            <div class="btn px-025 rounded">
+                <p class="text-base">
+                    I. <a href="https://www.instagram.com/vi.fabozzi/"
+                        >@vi.fabozzi</a
+                    >
+                </p>
+            </div>
+        </div>
+        <div class="col-span-2"></div>
+        <div class="col-span-2"></div>
+        <div id="IntroSection" class="col-span-2 px-025">
             <p class="text-base">
-                I. <a href="https://www.instagram.com/vi.fabozzi/"
-                    >@vi.fabozzi</a
-                >
+                Graphic Designer based in Urbino, IT <br />
+                Editorial · Motion · Visual Identities · Web Design
             </p>
         </div>
     </div>
+    <Nav />
 </header>
-<div data-fadein id="IntroSection" class="px-1 py-2">
-    <p class="text-base">
-        Graphic Designer <br />
-        Based in Urbino, IT <br />
-        Editorial · Motion · Visual Identities · Web Design
-    </p>
-</div>
 <script>
     import { fadeIn } from "../lib/FadeIn";
 
     const elements = [...document.querySelectorAll("[data-fadein]")].filter(
-        (el) =>
-            !el.closest("astro-island") ||
-            el.closest("#About"),
+        (el) => !el.closest("astro-island") || el.closest("#About"),
     );
 
     if (elements.length) fadeIn(elements);
