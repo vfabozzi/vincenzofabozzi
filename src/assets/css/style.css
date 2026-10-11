@@ -245,6 +245,10 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.grid-cols-7 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 .grid-cols-8 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
@@ -260,9 +264,21 @@ p {
 
 }
 
+.col-span-3 {
+    grid-column: span 3;
+    grid-row: span 3;
+
+}
+
 .col-span-4 {
     grid-column: span 4;
     grid-row: span 4;
+
+}
+
+.col-span-7 {
+    grid-column: span 7;
+    grid-row: span 7;
 
 }
 
@@ -483,14 +499,24 @@ a {
     .md\:pb-2 {
         padding-bottom: 1.8rem;
     }
+
     .md\:pb-120px {
         padding-bottom: 12rem;
+    }
+
+    .md\:grid-cols-8 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .md\:col-span-1 {
         grid-column: span 1;
     }
+
     .md\:col-span-2 {
         grid-column: span 2;
+    }
+
+    .md\:col-span-7 {
+        grid-column: span 7;
     }
 
     .md\:gap-2-7 {

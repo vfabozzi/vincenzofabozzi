@@ -1,11 +1,13 @@
 import { about, capabilities, workExperience, education, workshopsLecturesExhibitions } from '../assets/data/about';
+import { useFadeIn } from '../hooks/useFadeIn';
 
 export default function AboutContent() {
+    const scope = useFadeIn();
     return (
-        <div className='grid grid-cols-8 gap-0-4'>
-
-            <div id="About" className="col-span-8 md:col-span-2 flex flex-col gap-05 px-1 pb-10">
-                <div data-fadein className='pb-2'>
+        <div ref={scope} className='grid grid-cols-1 md:grid-cols-8 gap-0-4'>
+            <div className='hidden md:block col-span-1'></div>
+            <div id="About" className="col-span-8 md:col-span-7 grid grid-cols-7 gap-05 px-1 pb-10">
+                <div data-fadein className='col-span-7 md:col-span-2 pb-2'>
                     {about.map((content) => (
                         <p key={content.description} className='text-base'>
                             {Array.isArray(content.description)
@@ -19,7 +21,8 @@ export default function AboutContent() {
                         </p>
                     ))}
                 </div>
-                <div data-fadein id='aboutLists' className='flex flex-col gap-2'>
+                <div className='hidden md:block col-span-3'></div>
+                <div data-fadein id='aboutLists' className='col-span-7 md:col-span-2 flex flex-col gap-2'>
                     <div className='flex flex-col gap-05'>
                         <div>
                             <p className="text-base">Capabilities</p>

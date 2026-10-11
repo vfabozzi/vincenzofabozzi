@@ -4,7 +4,7 @@ import Nav from "./Nav.astro";
 
 <header data-fadein class="pt-05 pb-2 md:pb-120px px-1">
     <!-- Mobile -->
-    <div class="md:hidden grid grid-cols-2 gap-1 md:gap-0-4">
+    <div class="md:hidden grid grid-cols-2 gap-05 md:gap-0-4">
         <div class="col-span-1">
             <a href="/" class="text-base">Vincenzo Fabozzi</a>
         </div>
@@ -68,7 +68,7 @@ import Nav from "./Nav.astro";
     import { fadeIn } from "../lib/FadeIn";
 
     const elements = [...document.querySelectorAll("[data-fadein]")].filter(
-        (el) => !el.closest("astro-island") || el.closest("#About"),
+        (el) => !el.closest("astro-island")
     );
 
     if (elements.length) fadeIn(elements);

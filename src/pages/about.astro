@@ -1,10 +1,12 @@
 ---
-import Header from '../components/Header.astro';
-import Layout from '../layouts/Layout.astro';
-import AboutContent from '../components/AboutContent';
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
+import AboutContent from "../components/AboutContent";
 ---
 
 <Layout>
-	<Header />
-    <AboutContent client:load/>
+    <Header />
+    <AboutContent client:load />
+    <Footer />
 </Layout>
